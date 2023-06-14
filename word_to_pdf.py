@@ -2,11 +2,7 @@
 import os
 import comtypes.client
 import time
-
-
 wdFormatPDF = 17
-
-
 # absolute path is needed
 # be careful about the slash '\', use '\\' or '/' or raw string r"..."
 in_file=input(r'absolute path of input docx file 1: ')
