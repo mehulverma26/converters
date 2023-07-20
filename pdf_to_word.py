@@ -1,4 +1,4 @@
-'''from tkinter import *
+"""from tkinter import *
 from tkinter import filedialog
 from tkinter.filedialog import askopenfilename,asksaveasfile
 from PyPDF2 import PdfFileReader
@@ -91,14 +91,13 @@ pdf=self.dataDir + 'Template.pdf'
 
 doc.save(self.dataDir + 'template.docx')
 
-print("Document has been converted successfully")'''
-#run pip install PyPDF2 before running
+print("Document has been converted successfully")"""
+# run pip install PyPDF2 before running
 import PyPDF2
 
-FILE_PATH = input("enter file path: ") #file path
+FILE_PATH = input("enter file path: ")  # file path
 
-with open(FILE_PATH, mode='rb') as f:
-
+with open(FILE_PATH, mode="rb") as f:
     reader = PyPDF2.PdfFileReader(f)
 
     page = reader.getPage(0)
